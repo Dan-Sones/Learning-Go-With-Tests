@@ -30,7 +30,6 @@ func Countdown(out io.Writer, sleeper Sleeper) {
 	}
 	fmt.Fprint(out, finalWord)
 }
-
 func main() {
 	sleeper := &DefaultSleeper{}
 	Countdown(os.Stdout, sleeper)
